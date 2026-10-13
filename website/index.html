@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="浏览 84 套品牌设计语言，查看本地预览，复制 DESIGN.md 给你的 AI 编码助手。">
+  <title>Design Shelf · 设计语言收藏馆</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/catalog.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#collection">跳到设计集合</a>
+  <header class="site-header">
+    <a href="./" class="wordmark" aria-label="Design Shelf 首页"><span class="mark" aria-hidden="true">d<span>.</span></span>Design Shelf</a>
+    <nav aria-label="主导航"><a href="#collection">探索设计</a><a href="#how-to">如何使用</a><a href="https://github.com/mlhiter/awesome-design-md" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy"><p class="intro"><span class="status-dot"></span>为你的下一个界面，找一个好起点</p><h1>好设计，<br>从有据可依开始。</h1><p class="hero-description">把你喜欢的品牌设计语言，放进 AI 的上下文。<br>探索色彩、排版与组件规则，让界面有自己的样子。</p><a class="primary hero-action" href="#collection">浏览设计集合 <span aria-hidden="true">↓</span></a><div class="hero-meta"><span><strong id="total-stat">84</strong> 套设计语言</span><span><strong id="preview-stat">58</strong> 套历史预览</span><span>无需注册</span></div></div>
+      <div class="hero-art" aria-hidden="true"><div class="art-sheet sheet-back"><div class="art-label">Color is a language.</div><div class="big-swatch"></div><div class="small-swatches"><i></i><i></i><i></i></div><div class="art-rule"></div><p>Make something<br>worth looking at.</p></div><div class="art-sheet sheet-front"><div class="art-top"><span>DESIGN.md</span><span>↗</span></div><div class="art-type">Aa<span>Typography & character</span></div><div class="art-palette"><i></i><i></i><i></i><i></i></div><div class="art-lines"><i></i><i></i><i></i></div><div class="art-button">A good place to start</div></div><span class="art-caption">Design language, ready to build.</span></div>
+    </section>
+    <section id="collection" class="collection" aria-labelledby="collection-heading">
+      <div class="section-heading"><div><h2 id="collection-heading">挑选一种设计语言</h2><p>从熟悉的品牌里，找到适合你的风格。</p></div><span class="collection-count" id="result-count" role="status"></span></div>
+      <div class="toolbar"><label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><input id="search" type="search" placeholder="搜索品牌或风格，如 Apple、minimal…" aria-label="搜索品牌或风格"><kbd>/</kbd></label><label class="preview-filter"><input id="has-preview" type="checkbox">仅看有历史预览</label><label class="sort"><span class="sr-only">排序方式</span><select id="sort"><option value="featured">精选优先</option><option value="name">名称 A–Z</option></select></label></div>
+      <div id="categories" class="categories" aria-label="设计分类"></div>
+      <div id="grid" class="design-grid"></div>
+      <div id="empty" class="empty" hidden><h3>没有找到匹配的设计</h3><p>换一个关键词，或重置筛选后再看看。</p><button id="reset" class="secondary">重置筛选</button></div>
+    </section>
+    <section id="how-to" class="how-to"><div><h2>从喜欢，到开始构建。</h2><p>DESIGN.md 是给 AI 读的设计说明。<br>选好风格，把具体规则带进你的项目。</p></div><ol><li><span>01</span><div><h3>找到你的风格</h3><p>查看色板和预览，选一种适合产品的设计语言。</p></div></li><li><span>02</span><div><h3>放进项目</h3><p>下载 DESIGN.md，保存在项目根目录。</p></div></li><li><span>03</span><div><h3>让 AI 按规则构建</h3><p>告诉助手：“先阅读 DESIGN.md，再实现这个页面。”</p></div></li></ol></section>
+  </main>
+  <footer><div class="footer-top"><a class="wordmark" href="./">Design Shelf<span class="footer-note">设计语言收藏馆</span></a><p>基于 <a href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer">VoltAgent / awesome-design-md ↗</a></p></div><div class="footer-bottom"><p>非官方本地镜像。文档与历史预览可能来自不同版本；品牌名称与商标归各自所有者。</p><a href="LICENSE">MIT License</a></div></footer>
+  <dialog id="detail" aria-labelledby="detail-title"><div class="detail-header"><div><p id="detail-category"></p><h2 id="detail-title"></h2></div><button class="icon-button" id="close-detail" aria-label="关闭详情">×</button></div><p id="detail-description"></p><div class="detail-actions"><button id="copy" class="primary">复制 DESIGN.md</button><a id="download" class="secondary" download="DESIGN.md">下载文件 ↓</a><a id="source" target="_blank" rel="noopener noreferrer">查看源文件 ↗</a></div><div class="detail-toolbar"><div class="tabs" aria-label="查看内容"><button id="preview-tab" aria-pressed="true">预览与色板</button><button id="document-tab" aria-pressed="false">DESIGN.md</button></div><div class="modes" aria-label="预览主题"><button id="light" aria-pressed="true">浅色</button><button id="dark" aria-pressed="false">深色</button></div></div><p id="preview-note" class="preview-note"></p><div id="preview-panel"><div id="detail-palette"></div><iframe id="preview-frame" title="历史设计预览" sandbox="allow-same-origin" hidden></iframe><div id="token-preview" hidden></div></div><div id="document-panel" hidden><pre id="document"></pre><button id="retry" class="secondary" hidden>重新加载文档</button></div></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <noscript><p class="noscript">请启用 JavaScript 以浏览设计集合。也可以直接打开 designs 目录中的 DESIGN.md 文件。</p></noscript>
+</body>
+</html>
